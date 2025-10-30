@@ -1,0 +1,221 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+header {
+    border-width: 1px;
+    border-color: #c0c0c0;
+    border-style: solid;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    flex: 0 0 70px;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5% 10%;
+    align-items: center;
+}
+
+div h1{
+    color: white; 
+    font-family: Oswald, sans-serif; 
+    transform: scale(1.3, 1.9); 
+    margin-bottom: 0%;
+}
+
+.hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px; 
+    height: 24px; 
+}
+
+.hamburger-button .line {
+    display: flex;
+    width: 100%;
+    height: 2px; 
+    background-color: #000000;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+footer .hamburger-button{
+    display: none;
+}
+
+.content {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    gap: 4%;
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.filling {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: center;  
+    align-items: center;      
+    padding: 5%;             
+    margin: 0 auto;           
+    max-width: 95%;       
+    flex-direction: column; 
+}
+
+.blocks {
+    display: flex;               
+    flex-direction: row;         
+    justify-content: space-between; 
+    align-items: stretch;       
+}
+
+.block {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    flex: 1 1 30%;
+    margin: 1%;
+    padding: 2%;
+    padding-bottom: 6%;
+    height: auto;
+}
+
+.block h2 {
+    font-weight: normal;
+}
+
+.block p {
+    color: #7a7a7a;
+    font-style: italic;
+}
+
+.block-button{
+    background-color: #e22366;
+    color: white;
+    border: none;
+    padding: 10px 30px;    
+    width: auto;           
+    display: inline-block;  
+    align-self: flex-start;
+    cursor: pointer;        
+    font-size: 16px;       
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.block-button:hover {
+    background-color: #c81b57; 
+}
+			
+footer{
+	position: relative;
+	color: #ffffff;
+    background-color: #1a1a1a;
+	flex: 0 0 90px;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 3vh;
+    padding: 2% 10%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    flex-shrink: 1;
+    gap: 30px; 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #cccccc; 
+    border-radius: 3px;   
+    overflow: hidden;   
+    box-sizing: border-box;
+    flex-grow: 1;     
+    max-width: 250px; 
+}
+
+.search-container form {
+  display: flex;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1 1 auto;            
+  border: none;          
+  padding: 10px 5px;     
+  font-size: 16px;        
+  outline: none;          
+}
+
+.search-button {
+    border: none;
+    background-color: #ffffff;
+    padding: 0 12px; 
+    cursor: pointer;
+    color: #333; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; 
+}
+
+.search-button:hover {
+  background-color: #dedede;
+  color: #000; 
+}
+
+@media (max-width: 768px) {
+
+header{
+    justify-content: center;
+    flex-direction: column;
+}
+
+div h1{
+    font-size: large;
+}
+
+.blocks{
+    flex-direction: column;
+}
+
+.block {
+    margin: 5%;
+}
+
+footer .hamburger-button{
+    display: inline;
+}
+
+footer div{
+    display: none;
+}
+
+div img {
+    width: 20%;
+}
+}
